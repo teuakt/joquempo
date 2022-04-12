@@ -44,6 +44,7 @@ body {
     font-size: 33px;
     color: var(--text-color);
     font-weight: 600;
+    text-align: center;
 }
 
 .score-box {
@@ -112,16 +113,22 @@ body {
     box-sizing: border-box;
     padding-bottom: 12px ;
     cursor: pointer;
-    transition: 320ms;
+    transition: 300ms;
     box-shadow: 2px 2px 5px 1px #000000 ;
 }
 
 .button:hover {
+   filter:brightness(1.2);
+}
+
+.button:active {
     border: 1px solid var(--background);
     background-color: transparent;
     color: var(--background);
     box-shadow: 1px 1px 1px #000000;
+    transform: translateY(5px);
 }
+
 
 .game-field {
     width: 1313px;
